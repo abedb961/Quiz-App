@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
-    
-    <script src="script.js"></script>
+    <div class="app">
+        <header>
+            <h1>Welcome to the Quiz App</h1>
+            <div class="log-reg">
+                <button id="loginTab" onclick="switchTab('login')">Login</button>
+                <button id="registerTab" onclick="switchTab('register')">Register</button>
+            </div>
+        </header>
+
+        <div id="login" class="auth-Form">
+            <h2>Login</h2>
+            <form id="login-Form">
+                <input type="email" id="login-Email" placeholder="Enter your email" required />
+                <input type="password" id="login-Password" placeholder="Enter your password" required />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="register" class="auth-Form" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-Form">
+                <input type="email" id="register-Email" placeholder="Enter your email" required />
+                <input type="password" id="register-Password" placeholder="Enter your password" required />
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 </html>
